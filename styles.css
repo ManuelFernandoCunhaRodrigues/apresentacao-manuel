@@ -1305,7 +1305,7 @@ textarea {
         rgba(16, 13, 10, 0.96) 0%,
         rgba(16, 13, 10, 0.78) 55%,
         rgba(16, 13, 10, 0.96) 100%),
-      url('assets/foto-hero.jpeg') 65% center / cover no-repeat;
+      url('assets/foto-hero.jpeg') center center / cover no-repeat;
   }
 
   .highlights-grid {
@@ -1399,7 +1399,7 @@ textarea {
         rgba(16, 13, 10, 0.97) 0%,
         rgba(16, 13, 10, 0.85) 50%,
         rgba(16, 13, 10, 0.97) 100%),
-      url('assets/foto-hero.jpeg') 65% center / cover no-repeat;
+      url('assets/foto-hero.jpeg') center center / cover no-repeat;
   }
 
   .hero-name-first {
