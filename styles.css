@@ -188,6 +188,7 @@ textarea {
   isolation: isolate;
   overflow: hidden;
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   padding-top: 124px;
@@ -1603,6 +1604,92 @@ textarea {
 
   .contact-grid {
     gap: 72px;
+  }
+}
+
+/* ─── Pixel 1 / Android mid (411px–440px) ───────────── */
+
+@media (max-width: 440px) {
+  .hero-name-first {
+    font-size: clamp(2.6rem, 15.5vw, 4rem);
+  }
+
+  .hero-name-last {
+    font-size: clamp(2.2rem, 13.5vw, 3.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.85rem, 4vw, 1.1rem);
+    margin-top: 8px;
+  }
+
+  .hero-script {
+    font-size: clamp(1.1rem, 5.5vw, 1.6rem);
+    margin-top: 6px;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+    margin-top: 14px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+    gap: 10px;
+  }
+
+  .project-content h3 {
+    font-size: clamp(1.35rem, 7vw, 1.9rem);
+  }
+
+  .section-heading h2,
+  .contact-copy h2 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .cta-title {
+    font-size: clamp(1.9rem, 11vw, 2.6rem);
+  }
+
+  .tag-list span {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .contact-links {
+    gap: 7px;
+  }
+
+  .contact-links a {
+    font-size: 0.82rem;
+    padding: 8px 12px;
+  }
+
+  .project-content,
+  .contact-form,
+  .timeline-card {
+    padding: 16px;
+  }
+
+  .highlight-card {
+    padding: 20px 16px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .tech-card {
+    padding: 18px 10px;
+  }
+
+  .eyebrow {
+    font-size: 0.76rem;
+  }
+
+  .about-tags span {
+    font-size: 0.8rem;
+    padding: 7px 12px;
   }
 }
 
