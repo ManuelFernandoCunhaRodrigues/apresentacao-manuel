@@ -1328,6 +1328,14 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .split {
+    gap: 52px;
+  }
+
+  .contact-grid {
+    gap: 44px;
+  }
+
   .cta-inner {
     grid-template-columns: 1fr;
   }
@@ -1575,6 +1583,168 @@ textarea {
 
   .footer-inner {
     font-size: 0.82rem;
+  }
+}
+
+/* ─── Desktop largo 1280px+ ──────────────────────────── */
+
+@media (min-width: 1280px) {
+  .section {
+    padding: 124px 0;
+  }
+
+  .hero {
+    padding-top: 150px;
+  }
+
+  .split {
+    gap: 90px;
+  }
+
+  .contact-grid {
+    gap: 72px;
+  }
+}
+
+/* ─── Celulares muito pequenos 360px ─────────────────── */
+
+@media (max-width: 360px) {
+  .container {
+    width: min(100% - 16px, 1120px);
+  }
+
+  .brand span:last-child {
+    display: none;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .hero {
+    padding-top: 86px;
+  }
+
+  .hero-name-first {
+    font-size: clamp(2.1rem, 16vw, 2.8rem);
+  }
+
+  .hero-name-last {
+    font-size: clamp(1.9rem, 14vw, 2.5rem);
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.88rem;
+  }
+
+  .section-heading h2,
+  .contact-copy h2 {
+    font-size: clamp(1.4rem, 7.5vw, 1.9rem);
+  }
+
+  .cta-title {
+    font-size: clamp(1.8rem, 12vw, 2.4rem);
+  }
+
+  .project-content,
+  .contact-form,
+  .timeline-card {
+    padding: 14px;
+  }
+
+  .highlight-card {
+    padding: 18px 14px;
+  }
+
+  .tech-grid {
+    gap: 8px;
+  }
+
+  .tech-card {
+    padding: 14px 8px;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+}
+
+/* ─── Celular deitado (landscape) ────────────────────── */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+
+  .hero-name-first {
+    font-size: clamp(1.8rem, 7vh, 3rem);
+  }
+
+  .hero-name-last {
+    font-size: clamp(1.6rem, 6vh, 2.6rem);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.82rem, 2.8vh, 1.1rem);
+    margin-top: 6px;
+  }
+
+  .hero-script {
+    display: none;
+  }
+
+  .hero-text {
+    margin-top: 10px;
+    font-size: 0.88rem;
+  }
+
+  .hero-meta {
+    display: none;
+  }
+
+  .hero-actions {
+    margin-top: 14px;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .nav-menu {
+    max-height: calc(100svh - 74px);
+    overflow-y: auto;
+  }
+}
+
+/* ─── Dispositivos touch (desativa hover/transform) ──── */
+
+@media (hover: none) and (pointer: coarse) {
+  .project-card:hover,
+  .tech-card:hover,
+  .service-card:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-screenshot {
+    transform: none;
+    filter: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  .about-tags span:hover,
+  .contact-links a:hover {
+    transform: none;
   }
 }
 
