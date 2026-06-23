@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfólio de Manuel Fernando — desenvolvedor web especializado em sites, landing pages e sistemas modernos.">
+  <meta property="og:title" content="Manuel Fernando | Desenvolvedor Web">
+  <meta property="og:description"
+    content="Desenvolvo sites, landing pages e sistemas web modernos para transformar ideias em soluções digitais.">
+  <meta property="og:type" content="website">
+  <title>Manuel Fernando | Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Menu principal">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span class="brand-mark">MF</span>
+        <span>Manuel Fernando</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="primary-menu" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="primary-menu" data-menu>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="inicio">
+      <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+      <div class="hero-bg-image" aria-hidden="true"></div>
+      <div class="hero-bg-deco" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">
+            <span class="eyebrow-star">✦</span>
+            Portfólio Profissional
+            <span class="eyebrow-star">✦</span>
+          </p>
+          <h1>
+            <span class="hero-name-first">Manuel</span>
+            <span class="hero-name-last">Fernando</span>
+          </h1>
+          <h2 class="hero-subtitle">Desenvolvedor Web</h2>
+          <p class="hero-script" aria-hidden="true">criando soluções digitais</p>
+          <p class="hero-text">Desenvolvo sites, landing pages e sistemas web modernos para transformar ideias em
+            soluções digitais.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver Projetos <span class="btn-arrow">→</span></a>
+            <a class="btn btn-secondary" href="#contato">Entrar em Contato</a>
+          </div>
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Localização</span>
+              <strong>São Luís — MA</strong>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Formação</span>
+              <strong>Eng. de Software · UNDB</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-deco-star s1" aria-hidden="true">✦</div>
+      <div class="hero-deco-star s2" aria-hidden="true">✦</div>
+      <div class="hero-deco-star s3" aria-hidden="true">✦</div>
+    </section>
+
+    <!-- HIGHLIGHTS BAR -->
+    <div class="highlights-bar" aria-label="Destaques">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <p class="highlight-title">Sites Responsivos</p>
+            <p class="highlight-sub">Interfaces adaptadas para desktop, tablet e mobile.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <p class="highlight-title">Landing Pages</p>
+            <p class="highlight-sub">Páginas focadas em apresentação e conversão.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <p class="highlight-title">Sistemas Web</p>
+            <p class="highlight-sub">Soluções com organização, dados e funcionalidades.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <p class="highlight-title">Projetos Reais</p>
+            <p class="highlight-sub">Trabalhos aplicados para negócios e estudos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="section section-warm" id="sobre">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-star">✦</span> Sobre mim</p>
+          <h2>Organização, aprendizado contínuo e desenvolvimento web.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>Sou Manuel Fernando, desenvolvedor web em formação, com foco na criação de sites, landing pages e sistemas
+            modernos. Busco construir interfaces funcionais, responsivas e bem organizadas, sempre pensando na
+            experiência do usuário e no objetivo de cada projeto.</p>
+          <p>Estudo Engenharia de Software pela UNDB, atualmente no 2º período. Tenho experiência prática com HTML5,
+            CSS3 e JavaScript, e estou ampliando meus conhecimentos em React, Node.js e Python.</p>
+          <p>Sou pontual, organizado e responsável, com facilidade para trabalho em equipe e boa comunicação. Busco
+            oportunidades de estágio, freela e projetos onde eu possa crescer e entregar resultados reais.</p>
+          <div class="about-tags">
+            <span>Pontual</span>
+            <span>Organizado</span>
+            <span>Comunicativo</span>
+            <span>Trabalho em equipe</span>
+            <span>Comprometido</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section section-dark" id="formacao">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-star">✦</span> Formação acadêmica</p>
+          <h2>Base acadêmica em tecnologia e desenvolvimento de software.</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <article class="timeline-card">
+            <span class="timeline-year">Em andamento</span>
+            <h3>Engenharia de Software</h3>
+            <p class="timeline-institution">UNDB — 2º período</p>
+            <p>Formação voltada para fundamentos de tecnologia, programação, engenharia de software e desenvolvimento de
+              soluções digitais.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section section-warm" id="projetos">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-star">✦</span> Projetos</p>
+          <h2>Projetos reais criados com foco em performance e experiência do usuário.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <img class="project-screenshot" src="assets/cdcentral-rastreamento.png"
+                alt="Screenshot do projeto CDCentral Rastreamento">
+              <div class="project-shot-label">
+                <span>Site institucional</span>
+                <strong>CDCentral Rastreamento</strong>
+              </div>
+              <div class="project-number" aria-hidden="true">01</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <p class="project-kicker">Projeto 01</p>
+                <div class="project-type-badge">Site institucional</div>
+              </div>
+              <h3>CDCentral Rastreamento</h3>
+              <p>Site institucional para empresa de rastreamento veicular, monitoramento em tempo real e gestão de
+                frotas.</p>
+
+              <div class="project-detail">
+                <h4>Objetivo</h4>
+                <p>Criar uma página comercial profissional para apresentar serviços, destacar benefícios e facilitar o
+                  contato com clientes que buscam rastreamento veicular para pessoa física, empresas e frotas.</p>
+              </div>
+
+              <div class="project-detail">
+                <h4>Como funciona</h4>
+                <p>O site apresenta a empresa e permite que o usuário solicite atendimento por formulário. O JavaScript
+                  valida os campos e registra o contato no Supabase.</p>
+              </div>
+
+              <div class="tag-list" aria-label="Tecnologias utilizadas">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Supabase</span>
+                <span>Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://cd-central.vercel.app/" target="_blank"
+                  rel="noopener noreferrer">Ver Projeto <span class="btn-arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <img class="project-screenshot" src="assets/ella-boutique.png"
+                alt="Screenshot do projeto Ella Boutique">
+              <div class="project-shot-label">
+                <span>Vitrine digital</span>
+                <strong>Ella Boutique</strong>
+              </div>
+              <div class="project-number" aria-hidden="true">02</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <p class="project-kicker">Projeto 02</p>
+                <div class="project-type-badge">Vitrine digital</div>
+              </div>
+              <h3>Ella Boutique</h3>
+              <p>Site de loja virtual com foco em moda feminina, criado para apresentar produtos de forma elegante,
+                organizada e responsiva.</p>
+
+              <div class="project-detail">
+                <h4>Objetivo</h4>
+                <p>Criar uma vitrine digital profissional para produtos de moda feminina e fortalecer a presença digital
+                  da marca com layout moderno e experiência fluida.</p>
+              </div>
+
+              <div class="project-detail">
+                <h4>Como funciona</h4>
+                <p>A página apresenta destaques da loja, banners e principais produtos. O usuário navega pelos itens e
+                  visualiza informações, imagens e preços em desktop, tablet e celular.</p>
+              </div>
+
+              <div class="tag-list" aria-label="Tecnologias utilizadas">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Design responsivo</span>
+                <span>Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://ella-boutique.vercel.app/" target="_blank"
+                  rel="noopener noreferrer">Ver Projeto <span class="btn-arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <img class="project-screenshot" src="assets/clinica-auria.png" alt="Screenshot do site Clínica Auria" loading="lazy" />
+              <div class="project-number" aria-hidden="true">03</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <p class="project-kicker">Projeto 03</p>
+                <div class="project-type-badge">Site institucional</div>
+              </div>
+              <h3>Clínica Auria</h3>
+              <p>Landing page para clínica odontológica, com apresentação de serviços, equipe especializada e agendamento via WhatsApp.</p>
+
+              <div class="project-detail">
+                <h4>Resultado</h4>
+                <p>Design elegante e profissional, totalmente responsivo, com foco em conversão e experiência do paciente.</p>
+              </div>
+
+              <div class="tag-list" aria-label="Tecnologias utilizadas">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://clinica-auria.vercel.app" target="_blank"
+                  rel="noopener noreferrer">Ver Projeto <span class="btn-arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="section section-dark" id="tecnologias">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-star">✦</span> Tecnologias</p>
+          <h2>Ferramentas e linguagens que uso para construir soluções digitais.</h2>
+        </div>
+        <div class="tech-grid reveal">
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16v16H4z" /><path d="M4 9h16M9 4v16" />
+              </svg>
+            </div>
+            <p class="tech-name">HTML5</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" /><path d="M8 12h4l1 4 2-8 1 4h2" />
+              </svg>
+            </div>
+            <p class="tech-name">CSS3</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <p class="tech-name">JavaScript</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" /><path d="M8 12h8M12 8v8" />
+              </svg>
+            </div>
+            <p class="tech-name">React</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 9h6M9 12h6M9 15h4" />
+              </svg>
+            </div>
+            <p class="tech-name">Node.js</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <p class="tech-name">Banco de Dados</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </div>
+            <p class="tech-name">GitHub</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="tech-name">Python</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section section-warm" id="servicos">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-star">✦</span> Serviços</p>
+          <h2>O que posso desenvolver para o seu negócio ou projeto.</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <h3>Sites Institucionais</h3>
+            <p>Páginas profissionais para apresentar sua empresa, serviços e equipe com credibilidade e identidade
+              visual.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>Páginas de alta conversão criadas para captar leads, divulgar produtos ou apresentar serviços de forma
+              direta e impactante.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <path d="M14 17h3m3 0h-3m0 0v-3m0 3v3" />
+              </svg>
+            </div>
+            <h3>Portfólios Profissionais</h3>
+            <p>Sites personalizados para apresentar seu trabalho, projetos e habilidades de forma marcante e
+              profissional.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Sistemas Web</h3>
+            <p>Aplicações com funcionalidades, formulários e integrações para automatizar processos do seu negócio.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" />
+              </svg>
+            </div>
+            <h3>Dashboards</h3>
+            <p>Painéis visuais para visualizar dados, métricas e indicadores importantes do seu negócio em tempo real.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+              </svg>
+            </div>
+            <h3>Integrações com APIs</h3>
+            <p>Conexão do seu site com serviços externos como WhatsApp, pagamentos, formulários e bancos de dados.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+            </div>
+            <h3>Manutenção e Melhorias</h3>
+            <p>Atualização, correção de bugs, otimização de performance e melhorias visuais em sites já existentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <div class="cta-content reveal">
+          <p class="eyebrow eyebrow-accent"><span class="eyebrow-star">✦</span> Vamos trabalhar juntos</p>
+          <h2 class="cta-title">Pronto para tirar sua ideia do papel?</h2>
+          <p class="cta-sub">Vamos conversar sobre seu projeto e encontrar a melhor solução digital para o seu
+            objetivo.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-large" href="#contato">Entrar em contato <span
+                class="btn-arrow">→</span></a>
+          </div>
+        </div>
+        <div class="cta-deco" aria-hidden="true">
+          <span class="cta-deco-text">Seu futuro digital começa aqui</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-star">✦</span> Contato</p>
+          <h2>Vamos conversar sobre tecnologia, estágio ou projetos web?</h2>
+          <p>Estou em busca de oportunidades para aprender, contribuir e desenvolver soluções digitais com organização,
+            responsabilidade e qualidade.</p>
+          <div class="contact-links">
+            <a href="https://wa.me/5598984965178" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="mailto:manuelfernandocr4@gmail.com">E-mail</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/omano.dev?igsh=MWg4M3V4dXI4OTNueg==" target="_blank"
+              rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5"
+            placeholder="Conte um pouco sobre a oportunidade ou projeto" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+          <p class="form-feedback" role="status" aria-live="polite" data-form-feedback></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Manuel Fernando Cunha Rodrigues. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
