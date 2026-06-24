@@ -209,13 +209,7 @@ textarea {
 }
 
 .hero-bg-deco {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: url('assets/img-backgron-pot-hero.webp') right center / auto 100% no-repeat;
-  mix-blend-mode: screen;
-  opacity: 0.72;
-  pointer-events: none;
+  display: none;
 }
 
 .hero-canvas {
