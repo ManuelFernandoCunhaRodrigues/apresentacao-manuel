@@ -204,7 +204,7 @@ textarea {
       rgba(16, 13, 10, 0.88) 38%,
       rgba(16, 13, 10, 0.42) 62%,
       rgba(16, 13, 10, 0.08) 100%),
-    url('assets/foto-hero.jpeg') center / cover no-repeat;
+    url('assets/img-backgron-pot-hero.webp') center / cover no-repeat;
   pointer-events: none;
 }
 
@@ -212,7 +212,7 @@ textarea {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url('assets/img-backgron-pot-hero.png') right center / auto 100% no-repeat;
+  background: url('assets/img-backgron-pot-hero.webp') right center / auto 100% no-repeat;
   mix-blend-mode: screen;
   opacity: 0.72;
   pointer-events: none;
