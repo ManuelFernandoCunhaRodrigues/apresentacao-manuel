@@ -1302,10 +1302,10 @@ textarea {
   .hero-bg-image {
     background:
       linear-gradient(180deg,
-        rgba(16, 13, 10, 0.96) 0%,
-        rgba(16, 13, 10, 0.78) 55%,
-        rgba(16, 13, 10, 0.96) 100%),
-      url('assets/foto-hero.jpeg') center center / cover no-repeat;
+        rgba(16, 13, 10, 0.92) 0%,
+        rgba(16, 13, 10, 0.65) 50%,
+        rgba(16, 13, 10, 0.92) 100%),
+      url('assets/hero-mobile-portrait-640x853.webp') center top / cover no-repeat;
   }
 
   .highlights-grid {
@@ -1396,10 +1396,10 @@ textarea {
   .hero-bg-image {
     background:
       linear-gradient(180deg,
-        rgba(16, 13, 10, 0.97) 0%,
-        rgba(16, 13, 10, 0.85) 50%,
-        rgba(16, 13, 10, 0.97) 100%),
-      url('assets/foto-hero.jpeg') center center / cover no-repeat;
+        rgba(16, 13, 10, 0.94) 0%,
+        rgba(16, 13, 10, 0.70) 45%,
+        rgba(16, 13, 10, 0.94) 100%),
+      url('assets/hero-mobile-portrait-640x853.webp') center top / cover no-repeat;
   }
 
   .hero-name-first {
