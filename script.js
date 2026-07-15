@@ -10,30 +10,75 @@ const hero = document.querySelector(".hero");
 const heroCanvas = document.querySelector("[data-hero-canvas]");
 const tiltCard = document.querySelector("[data-tilt-card]");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const mobileMenuQuery = window.matchMedia("(max-width: 980px)");
 
 function updateHeader() {
+  if (!header) return;
   header.classList.toggle("is-scrolled", window.scrollY > 12);
 }
 
-function closeMenu() {
-  menu.classList.remove("is-open");
-  menuToggle.classList.remove("is-open");
-  menuToggle.setAttribute("aria-expanded", "false");
-  document.body.classList.remove("menu-open");
+function isMobileMenu() {
+  return mobileMenuQuery.matches;
 }
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = menu.classList.toggle("is-open");
-  menuToggle.classList.toggle("is-open", isOpen);
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  document.body.classList.toggle("menu-open", isOpen);
-});
+function setMenuState(isOpen) {
+  if (!menu || !menuToggle) return;
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
+  const shouldOpen = isOpen && isMobileMenu();
 
-window.addEventListener("scroll", updateHeader);
+  menu.classList.toggle("is-open", shouldOpen);
+  menuToggle.classList.toggle("is-open", shouldOpen);
+  menuToggle.setAttribute("aria-expanded", String(shouldOpen));
+  menuToggle.setAttribute("aria-label", shouldOpen ? "Fechar menu" : "Abrir menu");
+  document.body.classList.toggle("menu-open", shouldOpen);
+
+  if (isMobileMenu()) {
+    menu.setAttribute("aria-hidden", String(!shouldOpen));
+  } else {
+    menu.removeAttribute("aria-hidden");
+  }
+}
+
+function closeMenu() {
+  setMenuState(false);
+}
+
+if (menu && menuToggle) {
+  setMenuState(false);
+
+  menuToggle.addEventListener("click", () => {
+    setMenuState(!menu.classList.contains("is-open"));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.classList.contains("is-open")) {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!isMobileMenu() || !menu.classList.contains("is-open")) return;
+    if (menu.contains(event.target) || menuToggle.contains(event.target)) return;
+    closeMenu();
+  });
+
+  const syncMenuMode = () => {
+    setMenuState(menu.classList.contains("is-open"));
+  };
+
+  if (typeof mobileMenuQuery.addEventListener === "function") {
+    mobileMenuQuery.addEventListener("change", syncMenuMode);
+  } else {
+    mobileMenuQuery.addListener(syncMenuMode);
+  }
+}
+
+window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
 
 const revealObserver = new IntersectionObserver(
@@ -65,22 +110,24 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+if (contactForm && feedback) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-  const formData = new FormData(contactForm);
-  const name = String(formData.get("name")).trim();
-  const email = String(formData.get("email")).trim();
-  const message = String(formData.get("message")).trim();
+    const formData = new FormData(contactForm);
+    const name = String(formData.get("name")).trim();
+    const email = String(formData.get("email")).trim();
+    const message = String(formData.get("message")).trim();
 
-  if (!name || !email || !message) {
-    feedback.textContent = "Preencha todos os campos para enviar sua mensagem.";
-    return;
-  }
+    if (!name || !email || !message) {
+      feedback.textContent = "Preencha todos os campos para enviar sua mensagem.";
+      return;
+    }
 
-  feedback.textContent = "Mensagem pronta para envio. Configure seu e-mail ou backend para receber contatos.";
-  contactForm.reset();
-});
+    feedback.textContent = "Mensagem pronta para envio. Configure seu e-mail ou backend para receber contatos.";
+    contactForm.reset();
+  });
+}
 
 if (hero && heroCanvas && !prefersReducedMotion.matches) {
   const context = heroCanvas.getContext("2d");

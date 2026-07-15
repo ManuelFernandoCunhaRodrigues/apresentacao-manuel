@@ -134,7 +134,8 @@
         <div class="about-image-wrap reveal">
           <picture>
             <source media="(max-width: 980px)" srcset="assets/foto_manuel_mobile_1080x1350.webp" />
-            <img class="about-image" src="assets/sobre-mim-img.webp" alt="Manuel Fernando" />
+            <img class="about-image" src="assets/sobre-mim-img.webp" alt="Manuel Fernando" loading="lazy"
+              decoding="async" />
           </picture>
         </div>
         <div class="about-text reveal">
@@ -190,7 +191,7 @@
           <article class="project-card reveal">
             <div class="project-preview">
               <img class="project-screenshot" src="assets/cdcentral-rastreamento.png"
-                alt="Screenshot do projeto CDCentral Rastreamento">
+                alt="Screenshot do projeto CDCentral Rastreamento" loading="lazy" decoding="async">
               <div class="project-shot-label">
                 <span>Site institucional</span>
                 <strong>CDCentral Rastreamento</strong>
@@ -236,7 +237,7 @@
           <article class="project-card reveal">
             <div class="project-preview">
               <img class="project-screenshot" src="assets/ella-boutique.png"
-                alt="Screenshot do projeto Ella Boutique">
+                alt="Screenshot do projeto Ella Boutique" loading="lazy" decoding="async">
               <div class="project-shot-label">
                 <span>Vitrine digital</span>
                 <strong>Ella Boutique</strong>
@@ -281,7 +282,8 @@
 
           <article class="project-card reveal">
             <div class="project-preview">
-              <img class="project-screenshot" src="assets/clinica-auria.png" alt="Screenshot do site Clínica Auria" loading="lazy" />
+              <img class="project-screenshot" src="assets/clinica-auria.png" alt="Screenshot do site Clínica Auria"
+                loading="lazy" decoding="async" />
               <div class="project-number" aria-hidden="true">03</div>
             </div>
             <div class="project-content">
@@ -514,10 +516,11 @@
 
         <form class="contact-form reveal" data-contact-form>
           <label for="name">Nome</label>
-          <input id="name" name="name" type="text" placeholder="Seu nome" required>
+          <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name" required>
 
           <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
+          <input id="email" name="email" type="email" inputmode="email" placeholder="seuemail@email.com"
+            autocomplete="email" required>
 
           <label for="message">Mensagem</label>
           <textarea id="message" name="message" rows="5"
